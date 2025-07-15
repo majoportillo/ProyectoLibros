@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Infinity Books</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <img src="logos/infinity books.jpg" alt="Logo Infinity Books" class="logo" />
+            <h1>Bienvenido a Infinity Books</h1>
+        </div>
+        <nav class="nav-buttons">
+            <a href="iniciar_sesion.html" class="button"> Iniciar Sesión</a>
+            <a href="crearcuenta.html" class="button"> Crear Cuenta </a>
+        </nav>
+    </div>
+
+    <!-- Carrusel de Imágenes estilo Netflix -->
+   <div class="slider-container">
+    <div class="slider-track" id="slider">
+      <img src="carrusel/wildeheart.jpg" alt="Libro 1" />
+      <img src="carrusel/eleco.jpg" alt="Libro 2" />
+      <img src="carrusel/falir.jpg" alt="Libro 3" />
+      <img src="carrusel/elreino.jpg" alt="Libro 4" />
+      <img src="carrusel/falir.jpg" alt="Libro 5" />
+      <img src="carrusel/wildeheart.jpg" alt="Libro 1 Clon" />
+    </div>
+    <button class="slider-btn left" id="btn-left">&#10094;</button>
+    <button class="slider-btn right" id="btn-right">&#10095;</button>
+  </div>
+
+
+    <div class="main">
+        <h2>Explora lo mejor de tu imaginación, dónde las historias no tienen límites.</h2>
+        <p>
+            Únete a nuestra comunidad, y descubre el mejor lugar para leer, un mundo que te atrapará desde la primera línea.
+        </p>
+    
+    <div class="espaciado">
+    <a href="#" class="button" onclick="showAlert()">Categorías</a>
+</div>
+
+    </div>
+
+    <div class="testimonial">
+        <blockquote>
+            Explora mundos, conoce personajes, vive emociones. Todo empieza en Infinity Books.
+        </blockquote>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Aquí puedes agregar las categorías.");
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

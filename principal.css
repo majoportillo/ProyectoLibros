@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #080808;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Encabezado */
+.header {
+  background-color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Línea blanca debajo del header */
+.linea-blanca {
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  margin-top: 107px;
+  position: relative;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo más grande */
+.logo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Dropdown categorías */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  top: 45px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Buscador a la derecha */
+.right-header {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+#searchInput {
+  padding: 10px 15px;
+  margin-left:-120%;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.search-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-btn:hover {
+  background-color: #ccc;
+}
+
+/* Carrusel */
+.slider-container {
+  margin-top: 80px;
+  position: relative;
+  width: 82vw;
+  margin-left: 10vw;
+  height: 250px;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(100vw * 6);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+
+
+/* SECCIÓN DE LIBROS ESTILO NETFLIX/WATTPAD */
+.seccion-libros {
+  padding: 40px 20px;
+  background-color: black;
+  color: white;
+  margin-top: 5%;
+}
+
+.seccion-libros h2 {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-left: 5px solid white;
+  padding-left: 10px;
+}
+
+.libros-carrusel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contenedor-libros {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.contenedor-libros::-webkit-scrollbar {
+  display: none;
+}
+
+.libro {
+  flex: 0 0 auto;
+  width: 140px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.libro img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.libro p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.libro:hover {
+  transform: scale(1.05);
+}
+
+.flecha {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.izquierda {
+  position: absolute;
+  left: 0;
+}
+
+.derecha {
+  position: absolute;
+  right: 0;
+}

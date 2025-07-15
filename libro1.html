@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Libro - Infinity Books</title>
+  <link rel="stylesheet" href="libro1.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="left-header">
+      <img src="logos/infinity books.jpg" alt="Logo Infinity Books" class="logo" />
+      <div class="dropdown">
+        <button class="dropbtn">Categorías</button>
+        <div class="dropdown-content">
+          <a href="#">Romance</a>
+          <a href="#">Ciencia Ficción</a>
+          <a href="#">Misterio</a>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar..." />
+        <button class="search-btn">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="linea-blanca"></div>
+
+  <!-- Contenido del libro -->
+  <main class="contenido-libro">
+    <div class="portada">
+      <img src="portadaslibros/dagas.jpg" alt="Portada del Libro" />
+      <button class="btn-creador">
+        <img src="creadores/ana.jpg" alt="Creadora" />
+        <span>Ana Pérez</span>
+      </button>
+    </div>
+    <div class="info-libro">
+      <h1>La Daga Sin Nombre</h1>
+      <p class="autor">por Ana Pérez</p>
+      <div class="stats">
+        <span>👁️ 35,000 vistas</span>
+        <span>❤️ 12,000 favoritos</span>
+      </div>
+      <button class="btn-leer">📖 Leer ahora</button>
+      <h3>Sinopsis</h3>
+      <p class="sinopsis">
+        Una profecía enterrada. Una daga maldita. Un demonio que despierta tras mil años de silencio. En las tierras fragmentadas de Aëna, donde los dioses antiguos han sido olvidados y la magia es un susurro temido, un muchacho huérfano llamado Kael descubre un arma que jamás debió ser empuñada: una daga sin nombre, forjada en los fuegos del Reino Caído de Vecannar. Lo que empieza como un intento desesperado por sobrevivir se convierte en el primer paso hacia un destino oscuro: Kael se convierte en el portador de la Daga, marcado por un poder que devora tanto como concede. Cada elección que tome será vigilada por sombras que se ocultan tras los velos de la realidad. Mientras tanto, una sacerdotisa del Bosque de Lendrael despierta antiguas visiones; y una ladrona en la ciudad amurallada de Elenar roba un manuscrito que revela el verdadero precio del equilibrio del mundo. La daga ha sido desenvainada. La puerta ha sido abierta. Y Vecannar, el demonio sin forma, vuelve a caminar entre los vivos.
+      </p>
+    </div>
+  </main>
+
+  <!-- Carrusel de sugerencias -->
+  <section class="sugerencias">
+    <h2>Libros sugeridos</h2>
+    <div class="carrusel-container">
+      <button class="flecha izquierda">❮</button>
+      <div class="carrusel">
+        <!-- 14 libros -->
+        <div class="libro"><img src="portadaslibros/dagas.jpg" alt="Libro 1" /><p>Título 1</p></div>
+        <div class="libro"><img src="portadaslibros/libro2.jpg" alt="Libro 2" /><p>Título 2</p></div>
+        <div class="libro"><img src="portadaslibros/libro3.jpg" alt="Libro 3" /><p>Título 3</p></div>
+        <div class="libro"><img src="portadaslibros/libro4.jpg" alt="Libro 4" /><p>Título 4</p></div>
+        <div class="libro"><img src="portadaslibros/libro5.jpg" alt="Libro 5" /><p>Título 5</p></div>
+        <div class="libro"><img src="portadaslibros/libro6.jpg" alt="Libro 6" /><p>Título 6</p></div>
+        <div class="libro"><img src="portadaslibros/libro7.jpg" alt="Libro 7" /><p>Título 7</p></div>
+        <div class="libro"><img src="portadaslibros/libro8.jpg" alt="Libro 8" /><p>Título 8</p></div>
+        <div class="libro"><img src="portadaslibros/libro9.jpg" alt="Libro 9" /><p>Título 9</p></div>
+        <div class="libro"><img src="portadaslibros/libro10.jpg" alt="Libro 10" /><p>Título 10</p></div>
+        <div class="libro"><img src="portadaslibros/libro11.jpg" alt="Libro 11" /><p>Título 11</p></div>
+        <div class="libro"><img src="portadaslibros/libro12.jpg" alt="Libro 12" /><p>Título 12</p></div>
+        <div class="libro"><img src="portadaslibros/libro13.jpg" alt="Libro 13" /><p>Título 13</p></div>
+        <div class="libro"><img src="portadaslibros/libro14.jpg" alt="Libro 14" /><p>Título 14</p></div>
+      </div>
+      <button class="flecha derecha">❯</button>
+    </div>
+  </section>
+
+  <script src="libro1.js"></script>
+</body>
+</html>

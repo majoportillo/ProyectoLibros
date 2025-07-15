@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080808;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #000;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropbtn {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  border-radius: 8px;
+  top: 45px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.search-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+#searchInput {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.search-btn {
+  border-radius: 0 20px 20px 0;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Para que el contenedor flex muestre barra desplegable y buscador en línea */
+.left-header > .dropdown,
+.left-header > .search-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Línea blanca debajo del header */
+.linea-blanca {
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  margin-top: 80px; /* ajusta para que quede justo debajo del header */
+  position: relative;
+}
+
+/* Contenido del libro */
+.contenido-libro {
+  display: flex;
+  padding: 40px 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.portada {
+  position: relative;
+}
+
+.portada img {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-creador {
+  margin-top: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-creador img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px white;
+}
+
+.info-libro {
+  max-width: 500px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sinopsis {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Botón leer ahora con mismo estilo que Categorías */
+.btn-leer {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* Carrusel de sugerencias */
+.sugerencias {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.sugerencias h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.carrusel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.5s ease-in-out;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.libro {
+  flex: 0 0 auto;
+  width: 130px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.libro img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.libro:hover img {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* Flechas del carrusel */
+.flecha {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 20;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.flecha:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.flecha.izquierda {
+  left: 5px;
+}
+
+.flecha.derecha {
+  right: 5px;
+}

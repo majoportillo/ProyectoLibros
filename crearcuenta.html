@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Crear Cuenta</title>
+  <link rel="stylesheet" href="crearcuenta.css">
+</head>
+<body>
+
+  <!-- Sección del logo -->
+  <section class="logo-section">
+    <img src="logos/infinity books.jpg" alt="Logo de la página">
+  </section>
+<div class="center">
+  <h1>Crear Cuenta</h1>
+
+<!-- FORMULARIO -->
+  <form action="registro.php" method="POST">
+    <div class="txt_field">
+      <input type="email" name="correo"  required>
+      <span></span>
+      <label>Correo Electrónico</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="number" name="edad"  required>
+      <span></span>
+      <label>Edad</label>
+    </div>
+
+    <div class="txt_field">
+      <select name="genero" required>
+        <option value="" disabled selected hidden></option>
+        <option value="femenino">Femenino</option>
+        <option value="masculino">Masculino</option>
+        <option value="otro">Otro</option>
+        <option value="no_decir">Prefiero no decirlo</option>
+      </select>
+      <span></span>
+      <label>Género</label>
+    </div>
+
+    <div class="txt_field">
+      <input type="password" name="contraseña" required>
+      <span></span>
+      <label>Contraseña</label>
+    </div>
+
+    <input type="submit" value="Registrarse">
+
+    <div class="signup_link">
+      ¿Ya tienes una cuenta? <a href="iniciar_sesion.html">Inicia sesión</a>
+    </div>
+  </form>
+</div>
+
+
+</body>
+</html>
